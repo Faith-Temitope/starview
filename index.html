@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StartechOne - Portfolio</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-slate-50">
+    <!-- Header -->
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <button
+            onclick="showHome()"
+            class="flex items-center gap-2 hover:opacity-80 transition-opacity"
+          >
+            <div class="bg-blue-600 p-2 rounded-lg">
+              <svg
+                class="w-6 h-6 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+                ></path>
+              </svg>
+            </div>
+            <span class="text-xl font-bold text-slate-900">StarView</span>
+          </button>
+
+          <nav class="hidden md:flex items-center gap-8">
+            <a
+              href="#projects"
+              class="text-slate-600 hover:text-slate-900 transition-colors"
+              >Projects</a
+            >
+            <a
+              href="#people"
+              class="text-slate-600 hover:text-slate-900 transition-colors"
+              >Our Team</a
+            >
+            <a
+              href="#about"
+              class="text-slate-600 hover:text-slate-900 transition-colors"
+              >About</a
+            >
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="mainContent">
+      <!-- Home View (Hero, Projects, People) -->
+      <div id="homeView">
+        <!-- Hero Section -->
+        <section
+          class="bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-800 text-white"
+        >
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <h1 class="text-4xl md:text-5xl font-bold text-slate-50 mb-6">
+                  Welcome to StarView
+                </h1>
+                <p class="text-xl text-blue-100 mb-8">
+                  Empowering the next generation of tech innovators. Explore our
+                  portfolio of cutting-edge projects, from web development to
+                  data analytics, and meet the talented students and staff
+                  making it happen.
+                </p>
+
+                <div class="flex flex-wrap gap-4 mb-12">
+                  <a
+                    href="#projects"
+                    class="inline-flex items-center gap-2 bg-white text-blue-600 px-6 py-3 rounded-lg hover:bg-blue-50 transition-colors font-semibold"
+                  >
+                    View Projects
+                    <svg
+                      class="w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M9 5l7 7-7 7"
+                      ></path>
+                    </svg>
+                  </a>
+                  <a
+                    href="#people"
+                    class="inline-flex items-center gap-2 border-2 border-white text-white px-6 py-3 rounded-lg hover:bg-white/10 transition-colors font-semibold"
+                  >
+                    Meet the Team
+                  </a>
+                </div>
+
+                <div class="grid grid-cols-3 gap-8">
+                  <div class="flex items-start gap-3">
+                    <div class="bg-white/20 p-2 rounded-lg">
+                      <svg
+                        class="w-5 h-5"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div>
+                      <div class="text-2xl font-bold text-slate-50 mb-1">
+                        50+
+                      </div>
+                      <div class="text-blue-100 text-sm">Projects</div>
+                    </div>
+                  </div>
+                  <div class="flex items-start gap-3">
+                    <div class="bg-white/20 p-2 rounded-lg">
+                      <svg
+                        class="w-5 h-5"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div>
+                      <div class="text-2xl font-bold text-slate-50 mb-1">
+                        100+
+                      </div>
+                      <div class="text-blue-100 text-sm">Students</div>
+                    </div>
+                  </div>
+                  <div class="flex items-start gap-3">
+                    <div class="bg-white/20 p-2 rounded-lg">
+                      <svg
+                        class="w-5 h-5"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M13 10V3L4 14h7v7l9-11h-7z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div>
+                      <div class="text-2xl font-bold text-slate-50 mb-1">
+                        20+
+                      </div>
+                      <div class="text-blue-100 text-sm">Staff</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="relative">
+                <div
+                  class="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1704440263700-e63c995b5dba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+                    alt="StartechOne office"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div
+                  class="absolute -bottom-6 -right-6 bg-white text-slate-900 p-6 rounded-xl shadow-xl max-w-xs"
+                >
+                  <div class="text-lg font-semibold text-blue-600 mb-2">
+                    Innovation Hub
+                  </div>
+                  <p class="text-slate-600 text-sm">
+                    Where creativity meets technology to build tomorrow's
+                    solutions
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 bg-white">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+              <h2 class="text-4xl font-bold text-slate-900 mb-4">
+                Our Projects
+              </h2>
+              <p class="text-xl text-slate-600 max-w-2xl mx-auto">
+                Explore our diverse portfolio of projects ranging from web
+                development to AI/ML applications.
+              </p>
+            </div>
+
+            <div
+              class="mb-8 flex flex-col sm:flex-row gap-4 justify-between items-start sm:items-center"
+            >
+              <div class="flex flex-wrap gap-2">
+                <button
+                  onclick="filterProjects('all')"
+                  id="filter-all"
+                  class="px-4 py-2 rounded-lg bg-blue-600 text-white font-semibold"
+                >
+                  All Projects
+                </button>
+                <button
+                  onclick="filterProjects('company')"
+                  id="filter-company"
+                  class="px-4 py-2 rounded-lg border border-slate-300 text-slate-700 hover:bg-slate-50 font-semibold"
+                >
+                  Company Projects
+                </button>
+                <button
+                  onclick="filterProjects('student')"
+                  id="filter-student"
+                  class="px-4 py-2 rounded-lg border border-slate-300 text-slate-700 hover:bg-slate-50 font-semibold"
+                >
+                  Student Projects
+                </button>
+              </div>
+
+              <div>
+                <select
+                  id="categoryFilter"
+                  onchange="filterByCategory()"
+                  class="px-4 py-2 border border-slate-300 rounded-lg text-slate-900 bg-white hover:border-slate-400"
+                >
+                  <option value="all">All Categories</option>
+                  <option value="website">Websites</option>
+                  <option value="data-analysis">Data Analysis</option>
+                  <option value="mobile-app">Mobile Apps</option>
+                  <option value="ai-ml">AI/ML</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+
+            <div
+              id="projectsGrid"
+              class="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+            >
+              <!-- Projects will be loaded here by JavaScript -->
+            </div>
+          </div>
+        </section>
+
+        <!-- People Section -->
+        <section id="people" class="py-20 bg-slate-50">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+              <h2 class="text-4xl font-bold text-slate-900 mb-4">Our Team</h2>
+              <p class="text-xl text-slate-600 max-w-2xl mx-auto">
+                Meet the talented individuals who make StartechOne a thriving
+                community of innovation and learning.
+              </p>
+            </div>
+
+            <div class="mb-8 flex justify-center gap-2">
+              <button
+                onclick="filterPeople('all')"
+                id="people-filter-all"
+                class="px-4 py-2 rounded-lg bg-blue-600 text-white font-semibold"
+              >
+                Everyone
+              </button>
+              <button
+                onclick="filterPeople('staff')"
+                id="people-filter-staff"
+                class="px-4 py-2 rounded-lg border border-slate-300 text-slate-700 hover:bg-slate-50 font-semibold"
+              >
+                Staff
+              </button>
+              <button
+                onclick="filterPeople('student')"
+                id="people-filter-student"
+                class="px-4 py-2 rounded-lg border border-slate-300 text-slate-700 hover:bg-slate-50 font-semibold"
+              >
+                Students
+              </button>
+            </div>
+
+            <div
+              id="peopleGrid"
+              class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
+            >
+              <!-- People will be loaded here by JavaScript -->
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Project Detail View -->
+      <div id="projectDetailView" class="hidden">
+        <!-- Content will be loaded dynamically -->
+      </div>
+
+      <!-- Profile Detail View -->
+      <div id="profileDetailView" class="hidden">
+        <!-- Content will be loaded dynamically -->
+      </div>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
